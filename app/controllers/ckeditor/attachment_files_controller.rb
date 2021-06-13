@@ -3,6 +3,10 @@ class Ckeditor::AttachmentFilesController < Ckeditor::ApplicationController
 
   def index
     @attachments = Ckeditor.attachment_file_adapter.find_all(ckeditor_attachment_files_scope)
+
+    puts @attachments
+    puts "---------------------"
+    
     @attachments = Ckeditor::Paginatable.new(@attachments).page(params[:page])
 
     respond_to do |format|
