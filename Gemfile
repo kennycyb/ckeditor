@@ -12,7 +12,7 @@ platforms :ruby do
 
   group :development, :test do
     gem 'capybara', '>= 0.4.0'
-    gem 'jquery-rails', '~> 4.3.3'
+    gem 'jquery-rails', '~> 4.6.0'
     gem 'mynyml-redgreen', '~> 0.7.1', require: 'redgreen'
     gem 'rails-controller-testing'
   end
